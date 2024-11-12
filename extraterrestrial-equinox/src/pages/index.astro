@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cancelación de Pago</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .cancel-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .cancel-icon {
+            font-size: 48px;
+            color: #dc3545;
+            margin-bottom: 20px;
+        }
+
+        .cancel-title {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .cancel-message {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .go-back-button {
+            background: linear-gradient(135deg, #2196F3, #1976D2);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .go-back-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .go-back-button:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="cancel-container">
+        <div class="cancel-icon">&#x2718;</div>
+        <h2 class="cancel-title">Pago Cancelado</h2>
+        <p class="cancel-message">Lo sentimos, has cancelado el pago. Puedes intentar de nuevo más tarde.</p>
+        <button class="go-back-button" onclick="window.location.href = 'index.html'">Volver a Intentar</button>
+    </div>
+</body>
+</html>
